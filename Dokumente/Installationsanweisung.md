@@ -56,6 +56,7 @@ Bestätigt dann mit “Apply” um die Installation zu starten.
 
 3. Das Projekt wird geöffnet
 4. Öffnen Sie den “Device Manager” 
+
 ![image](https://github.com/sschoeb/OST-Mobile-App-Engineering-2024/assets/2493698/1229f55e-705b-4bc9-b431-590da0bfe9b3)
 
 
