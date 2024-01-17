@@ -59,20 +59,23 @@ Bestätigt dann mit “Apply” um die Installation zu starten.
 
 ![image](https://github.com/sschoeb/OST-Mobile-App-Engineering-2024/assets/2493698/1229f55e-705b-4bc9-b431-590da0bfe9b3)
 
-
 6. Klicken Sie auf «Create Virtual Device»
+
 ![image](https://github.com/sschoeb/OST-Mobile-App-Engineering-2024/assets/2493698/ad4171a4-4fed-40f1-a28f-f01e1109e672)
 
 
 7. Wählen Sie ein Nexus 5X aus 
+
 ![image](https://github.com/sschoeb/OST-Mobile-App-Engineering-2024/assets/2493698/c83cf4d9-e619-4bb0-add3-64eb3d682513)
 
 
 8. Wählen Sie das System Image “S” oder “Sv2” aus (muss gegebenenfalls noch über den Pfeil heruntergeladen werden) 
+
 ![image](https://github.com/sschoeb/OST-Mobile-App-Engineering-2024/assets/2493698/1255b817-9a9c-47a3-ac10-1d47b2b7de6c)
 
 
 9. Konfiguration mit «Finish» bestätigen 
+
 ![image](https://github.com/sschoeb/OST-Mobile-App-Engineering-2024/assets/2493698/59565a34-9928-4b67-acc5-b2bd64b5c85b)
 
 
