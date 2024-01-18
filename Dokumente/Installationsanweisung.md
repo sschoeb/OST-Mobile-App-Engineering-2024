@@ -7,9 +7,10 @@ Sämtliche Übungen/Lösungen wie auch der Installations-Test werden über folge
 https://github.com/sschoeb/OST-Mobile-App-Engineering-2024
 
 Bitte klont das Repository. Beachtet dabei die folgenden Punkte:
-• Der Ordner sollte nicht zu tief verschachtelt sein. Optimal etwas wie «C:/Projekte» verwenden.
-• Der Pfad sollte keine Leerzeichen aufweisen
-• Der Pfad sollte keine Sonderzeichen und keine Umlaute aufweisen
+
+- Der Ordner sollte nicht zu tief verschachtelt sein. Optimal etwas wie «C:/Projekte» verwenden.
+- Der Pfad sollte keine Leerzeichen aufweisen
+- Der Pfad sollte keine Sonderzeichen und keine Umlaute aufweisen
 
 Solltet ihr euch nicht an diese Punkte halten, kann dies zu unspezifischen Build-Problemen führen!
 
@@ -35,7 +36,7 @@ Wenn Sie hier angekommen sind haben Sie die erste Hürde geschafft. Nun müssen 
 Wähle dort im Tab “SDK Platforms” die folgenden Einträge aus:
 - Android 12L
 - Android 12.0
-- 
+  
 Unter dem Tab SDK-Tools die folgenden Einträge:
 - Android SDK Build-Tools 33
 - Android Emulator
