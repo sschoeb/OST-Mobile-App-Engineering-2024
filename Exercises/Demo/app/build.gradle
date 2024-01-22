@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '28.0.3'
+    compileSdk 32
+    buildToolsVersion '33.0.0 rc1'
 
     defaultConfig {
         applicationId "ch.schoeb.demoapp"
