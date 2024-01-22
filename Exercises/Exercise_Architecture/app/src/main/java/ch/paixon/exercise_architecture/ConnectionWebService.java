@@ -1,12 +1,10 @@
 package ch.paixon.exercise_architecture;
 
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
-import android.util.Log;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 
 import ch.paixon.exercise_architecture.dto.ConnectionContainerDto;
-import ch.paixon.exercise_architecture.viewmodels.ConnectionViewModel;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

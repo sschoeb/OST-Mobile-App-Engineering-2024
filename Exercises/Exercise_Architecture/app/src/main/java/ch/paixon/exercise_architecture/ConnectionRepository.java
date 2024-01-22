@@ -1,7 +1,7 @@
 package ch.paixon.exercise_architecture;
 
 
-import android.arch.lifecycle.LiveData;
+import androidx.lifecycle.LiveData;
 
 import ch.paixon.exercise_architecture.dto.ConnectionContainerDto;
 
