@@ -1,6 +1,8 @@
 package ch.paixon.exercise_asynctask;
 
 import android.os.AsyncTask;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,46 +28,14 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                new Worker().execute();
+
+                // TODO 1. Start your own thread
+                // TODO 2. Update UI
+                // TODO 3. Make sure thread is stopped on destroy
+
             }
         });
 
     }
 
-    class Worker extends AsyncTask<Void, Integer, Void> {
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-
-            // TODO:
-            // - Stelle sicher, dass der Progress auf 0 steht
-            // - Stelle sicher, dass "Started in der textViewState"
-        }
-
-        @Override
-        protected void onPostExecute(Void result) {
-            super.onPostExecute(result);
-            // TODO:
-            // - Stelle sicher, dass "Finished" in der "textViewState"
-        }
-
-        @Override
-        protected Void doInBackground(Void... arg0) {
-
-            // TODO: Zähle den Stand von 0 auf 100
-            // - Benutze Thread.sleep(1000) um alles sichtbar zu machen
-            // - Zeige den aktuellen Stand dem Benutzer -> publishProgress(...)
-            return null;
-        }
-
-        @Override
-        protected void onProgressUpdate(Integer... values) {
-            super.onProgressUpdate(values);
-
-            // TODO: Stelle sicher, dass der aktuelle Stand (values[0]) in der
-            // ProgressBar angezeigt wird
-
-        }
-    }
 }
