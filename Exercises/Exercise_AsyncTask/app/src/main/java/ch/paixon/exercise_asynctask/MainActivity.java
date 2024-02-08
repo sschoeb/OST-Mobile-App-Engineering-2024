@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -14,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
     private TextView textViewState;
+
+    private Thread thread;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,14 +31,67 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
+                progressBar.setProgress(0);
+                textViewState.setText("Started");
 
-                // TODO 1. Start your own thread
-                // TODO 2. Update UI
-                // TODO 3. Make sure thread is stopped on destroy
-
+                thread = new Thread(new Worker());
+                thread.start();
             }
         });
+    }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        Log.d("Threading", "Interrupt running background thread");
+        thread.interrupt();
+    }
+
+    class Worker implements Runnable {
+
+        @Override
+        public void run() {
+            int progress = 0;
+            for (int i = 0; i < 10; i++) {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    Log.d("Threading", "Thread interrupted while sleeping");
+                    return;
+                }
+
+                if (Thread.currentThread().isInterrupted()) {
+                    Log.d("Threading", "Thread interrupted");
+                    return;
+                }
+
+                progress += 10;
+                publishProgress(progress);
+            }
+
+            finish();
+        }
+
+        private void publishProgress(int currentProgress) {
+
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    progressBar.setProgress(currentProgress);
+                }
+            });
+
+        }
+
+        private void finish() {
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    textViewState.setText("Finished");
+                }
+            });
+        }
     }
 
 }
